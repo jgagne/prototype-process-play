@@ -1,0 +1,218 @@
+/*
+
+Learn HTML & CSS:
+
+- HTML Reference - A free visual guide to HTML: https://htmlreference.io
+- CSS Reference - A free visual guide to CSS: https://cssreference.io
+- HTML5 Element Index: http://html5doctor.com/#glossary
+- Marksheet: A free HTML & CSS tutorial: https://marksheet.io
+- Learn to Code HTML & CSS https://learn.shayhowe.com/html-css/
+
+*/
+
+/* --- webfonts --- */
+
+/*
+
+- Free Webfonts: https://fonts.google.com
+- Webfont Generator: https://www.creativefabrica.com/webfont-generator/
+- Webfont Test: http://webfont-test.com
+
+*/
+
+/*
+
+- Blokk Font: http://www.blokkfont.com
+- Flow: https://danross.co/flow/
+
+*/
+
+@font-face {
+  font-family: Blokk;
+  src: url("../fonts/blokk/BLOKKNeue-Regular.woff2") format("woff2"),
+       url("../fonts/blokk/BLOKKNeue-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* --- resets --- */
+
+/*
+
+1. Correct the line height in all browsers.
+https://github.com/necolas/normalize.css/blob/fc091cce1534909334c1911709a39c22d406977b/normalize.css#L12
+2. Set font-family to sans-serif instead of serif.
+
+*/
+
+html {
+  font: 100%/1.15 sans-serif; /* 1 / 2 */
+}
+
+body {
+  padding: 1rem;
+  margin: 0;
+}
+
+/* --- flexible/fluid images --- */
+
+/*
+
+1. https://alistapart.com/article/fluid-images/
+2. Override width and height values on HTML img tag (if present)
+3. Remove the gap between audio, canvas, iframes, images, videos and the bottom of their containers:
+https://github.com/h5bp/html5-boilerplate/issues/440
+
+*/
+
+img {
+  width: auto; /* 2 */
+  max-width: 100%; /* 1 */
+  height: auto; /* 2 */
+  vertical-align: middle; /* 3 */
+}
+
+/* --- FPO images --- */
+
+img.fpo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  background: #999;
+}
+
+/* --- greeked text --- */
+
+/*
+
+- Greeking: https://en.wikipedia.org/wiki/Greeking
+
+1. CSS Font Stacks: https://www.cssfontstack.com
+
+*/
+
+.greeked-text * {
+  font-family: Blokk, "Courier New", monospace; /* 1 */
+  color: #999;
+}
+
+/* --- general typography --- */
+
+header {
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  line-height: 1.35;
+  margin-top: 0;
+}
+
+p.subhead {
+  font-size: 1.8em;
+  margin-top: .5rem;
+  margin-bottom: 0;
+}
+
+p.byline {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+img.fpo {
+  margin-bottom: 1rem;
+}
+
+/* --- named grid areas --- */
+
+/*
+
+- Learn CSS Grid: https://learncssgrid.com
+- CSS Grid Layout Terminology, Explained: https://bitsofco.de/css-grid-terminology/
+- Grid by Example: https://gridbyexample.com
+
+*/
+
+#image-1 {
+  grid-area: image-1;
+}
+
+#header-1 {
+  grid-area: header-1;
+}
+
+#text-1 {
+  grid-area: text-1;
+}
+
+/* ↓ start media query */
+
+@media (min-width: 44em) {
+
+/*
+
+1. Resize typography for multi-column layout
+
+*/
+
+body {
+  font-size: 125%; /* 1 */
+}
+
+/* --- grid layout / 3 col --- */
+
+.grid-3-col {
+  display: grid;
+  max-width: 60rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 0 1.5rem;
+  margin: 0 auto;
+}
+
+/* --- layouts --- */
+
+.layout-v1 {
+  grid-template-rows: 24rem auto;
+  grid-gap: 1.5rem;
+  grid-template-areas:
+    "image-1    image-1   image-1"
+    "header-1   text-1    text-1";
+}
+
+.layout-v2 {
+  grid-template-areas:
+    "image-1    image-1   header-1"
+    "image-1    image-1   text-1";
+}
+
+.layout-v3 {
+  grid-template-rows: 24rem auto;
+  grid-gap: 1.5rem;
+  grid-template-areas:
+    "header-1   image-1   image-1"
+    "text-1     text-1    text-1";
+}
+
+.layout-v3 #text-1 {
+  columns: 3;
+}
+
+.layout-v4 {
+  grid-template-rows: 24rem auto;
+  grid-gap: 1.5rem;
+  grid-template-areas:
+    ".            image-1   image-1"
+    "header-1     text-1    text-1";
+}
+
+}
+
+/* ↑ end media query */
+
+
