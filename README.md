@@ -3,6 +3,7 @@
 Prague College Workshop (November 27, 2019)
 
 - [Demos](/demos/)
+  - [Preview](https://jgagne.github.io/prototype-process-play/demos/01-wireframe-prototype-css-grid-layout/) → `01-wireframe-prototype-css-grid-layout`
 
 ## Text Editors
 
