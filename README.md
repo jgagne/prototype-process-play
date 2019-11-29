@@ -15,7 +15,20 @@ Pick your flavor:
 
 ## Browsers
 
-[Fight browser monoculture](https://adrianroselli.com/2018/12/stepping-back-from-the-edge.html):
+Fight [browser monoculture](https://adrianroselli.com/2018/12/stepping-back-from-the-edge.html):
 
 - [Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/) (Awesome Inspector for CSS Grid Layout and learn with their [CSS Grid playground](https://mozilladevelopers.github.io/playground/css-grid/))
 - [Microsoft Edge](https://www.microsoftedgeinsider.com/en-us/download/)
+
+## GitHub
+
+Version control, collaboration, and publishing for free.
+
+- [Git for Designers](https://medium.com/@dfosco/git-for-designers-856c434716e)
+- [How to get your website online easily with Github](https://codeburst.io/how-to-get-your-website-online-easily-with-github-44ea5ce2997d)
+- [Steps for Hosting a Website on GitHub](https://gist.github.com/TylerFisher/6127328)
+
+## Awesome Design Tools
+
+- [The best design tools and plugins for everything](https://github.com/LisaDziuba/Awesome-Design-Tools)
+
