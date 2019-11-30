@@ -5,6 +5,17 @@ Prague College Workshop (November 27, 2019)
 - [Demos](/demos/)
   - [Preview](https://jgagne.github.io/prototype-process-play/demos/01-wireframe-prototype-css-grid-layout/) → `01-wireframe-prototype-css-grid-layout`
 
+## Inspiration
+
+Practical CSS Grid Layout use cases.
+
+- [Print to CSS](https://www.dan-davies.co.uk/print-to-css)
+- [Inspired Design Decisions: Avaunt Magazine](https://www.smashingmagazine.com/2019/06/inspired-design-decisions-avaunt-magazine/)
+- [Inspired Design Decisions: Pressing Matters](https://www.smashingmagazine.com/2019/07/inspired-design-decisions-pressing-matters/)
+- [Inspired Design Decisions: Ernest Journal](https://www.smashingmagazine.com/2019/08/inspired-design-decisions-ernest-journal/)
+- [Inspired Design Decisions: Alexey Brodovitch](https://www.smashingmagazine.com/2019/09/inspired-design-decisions-alexey-brodovitch/)
+- [Inspired Design Decisions: Bea Feitler, An Unstoppable Creative Force](https://www.smashingmagazine.com/2019/10/inspired-design-decisions-bea-feitler/)
+
 ## Text Editors
 
 Pick your flavor:
