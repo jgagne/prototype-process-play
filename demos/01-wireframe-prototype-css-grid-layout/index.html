@@ -5,44 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/main.css">
   <title>Demo: Wireframing & Prototyping with CSS Grid Layout</title>
+  <meta name="description" content="Deciding to design in the browser.">
   <meta name="author" content="Justin Gagne, https://justingagne.design">
   <!--
-
   - HEAD - A free guide to HTML5 head elements: https://htmlhead.dev
-
   -->
 </head>
-<body class="greeked-text">
-<!-- ↑ Remove class="greek-text" to display ungreeked text, like this: <body> -->
+<body>
+
+<!-- <a href="#layout">Layout v4</a> -->
+
+<!--
+Checkbox toggle for greeked text
+- Greeking: https://en.wikipedia.org/wiki/Greeking
+-->
+
+<input type="checkbox" value="selected" class="toggle-input" id="toggle-greeking" checked>
+<label for="toggle-greeking" class="toggle-label">Greeked Text</label>
+
+<main>
 
 <div class="grid-3-col layout-v1">
 
 <!--
-
 - Placeholder 1px × 1px PNG: http://png-pixel.com
-
 -->
 
 <img id="image-1" class="fpo" alt="For placement only." src="data:image/png;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="320" height="160">
 
 <!--
-
 - If you’ve ever had doubts about how to mark up subheadings:
 https://medium.com/@barvysta/if-youve-ever-had-doubts-about-how-to-mark-up-subheadings-220cbe97c361
-
 -->
 
 <header id="header-1">
   <h1>Deciding to Design in the Browser</h1>
-  <p class="subhead">Subheading</p>
-  <p class="byline">By Markup & Style</p>
+  <p class="subhead">Prototype, Process, Play</p>
+  <p class="byline">With Markup & Style</p>
 </header>
 
 <!--
-
 - Placeholder text: https://simple.wikipedia.org/wiki/Paragraph
 - A delightful reference for HTML Symbols, Entities and ASCII Character Codes: https://htmlarrows.com
-
 -->
 
 <div id="text-1">
@@ -61,6 +65,8 @@ https://medium.com/@barvysta/if-youve-ever-had-doubts-about-how-to-mark-up-subhe
 </div>
 
 </div>
+
+</main>
 
 </body>
 </html>
