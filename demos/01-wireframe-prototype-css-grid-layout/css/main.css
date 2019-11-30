@@ -166,53 +166,74 @@ body {
 
 /* --- grid layout / 3 col --- */
 
+/*
+
+1. The fr unit
+https://mozilladevelopers.github.io/playground/css-grid/04-fr-unit/
+
+*/
+
 .grid-3-col {
   display: grid;
   max-width: 60rem;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
+  grid-template-rows: auto; /* height of rows */
+  grid-template-columns: repeat(3, 1fr); /* the same as: 1fr 1fr 1fr / 1 */
   grid-gap: 0 1.5rem;
   margin: 0 auto;
 }
 
 /* --- layouts --- */
 
+
+/* layout 1 */
+
 .layout-v1 {
   grid-template-rows: 24rem auto;
   grid-gap: 1.5rem;
   grid-template-areas:
-    "image-1    image-1   image-1"
-    "header-1   text-1    text-1";
+    "image-1    image-1   image-1" /* 24rem height */
+    "header-1   text-1    text-1"; /* auto height */
 }
+
+/* layout 2 */
 
 .layout-v2 {
   grid-template-areas:
-    "image-1    image-1   header-1"
-    "image-1    image-1   text-1";
+    "image-1    image-1   header-1" /* auto height */
+    "image-1    image-1   text-1"; /* auto height */
 }
+
+/* layout 3 */
 
 .layout-v3 {
   grid-template-rows: 24rem auto;
   grid-gap: 1.5rem;
   grid-template-areas:
-    "header-1   image-1   image-1"
-    "text-1     text-1    text-1";
+    "header-1   image-1   image-1" /* 24rem height */
+    "text-1     text-1    text-1"; /* auto height */
 }
 
+/*
+
+1. Flow text into 3 columns with CSS Multi-column Layout.
+https://www.smashingmagazine.com/2019/01/css-multiple-column-layout-multicol/
+
+*/
+
 .layout-v3 #text-1 {
-  columns: 3;
+  columns: 3; /* 1 */
 }
+
+/* layout 4 */
 
 .layout-v4 {
   grid-template-rows: 24rem auto;
   grid-gap: 1.5rem;
   grid-template-areas:
-    ".            image-1   image-1"
-    "header-1     text-1    text-1";
+    ".            image-1   image-1" /* 24rem height */
+    "header-1     text-1    text-1"; /* auto height */
 }
 
 }
 
 /* ↑ end media query */
-
-
