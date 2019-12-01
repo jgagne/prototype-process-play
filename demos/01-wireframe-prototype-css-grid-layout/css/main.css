@@ -56,7 +56,8 @@ Form element resets courtesy of:
 2. Remove the margin in Firefox and Safari.
 */
 
-input {
+input,
+select {
   font-family: inherit; /* 1 */
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
@@ -71,6 +72,16 @@ Show the overflow in IE.
 input { /* 1 */
   overflow: visible;
 }
+
+/*
+Remove the inheritance of text transform in Edge, Firefox, and IE.
+1. Remove the inheritance of text transform in Firefox.
+*/
+
+select { /* 1 */
+  text-transform: none;
+}
+
 
 /* --- flexible/fluid images --- */
 
@@ -109,15 +120,44 @@ img.fpo {
   color: #999;
 }
 
+.select-label,
 .toggle-label {
   display: inline-block;
   font-family: monospace;
-  text-indent: .375rem;
   cursor: pointer;
 }
 
-.toggle-label + main {
-  margin-top: 1.5rem;
+/* --- select layout --- */
+
+/* hide in single-column layout breakpoint */
+
+.select-layout {
+  display: none;
+  margin-left: 1.5rem;
+}
+
+.select-layout select {
+  font-family: monospace;
+}
+
+/* show in multi-column layout breakpoint */
+
+/* ↓ start media query */
+
+@media (min-width: 44em) {
+
+.select-layout {
+  display: inline;
+}
+
+}
+
+/* ↑ end media query */
+
+main {
+  padding-top: 1.5rem;
+  border-top: 1px dashed #ccc;
+  margin-top: 1rem;
 }
 
 /* --- general typography --- */
@@ -247,6 +287,16 @@ https://www.smashingmagazine.com/2019/01/css-multiple-column-layout-multicol/
   grid-template-areas:
     ".            image-1   image-1" /* 24rem height */
     "header-1     text-1    text-1"; /* auto height */
+}
+
+/* layout 5 */
+
+.layout-v5 {
+  grid-template-rows: 18rem auto;
+  grid-gap: 1.5rem;
+  grid-template-areas:
+    "header-1   text-1    image-1" /* 24rem height */
+    ".          text-1    ."; /* auto height */
 }
 
 }

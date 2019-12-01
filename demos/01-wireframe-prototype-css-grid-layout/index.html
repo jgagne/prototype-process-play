@@ -10,22 +10,47 @@
   <!--
   - HEAD - A free guide to HTML5 head elements: https://htmlhead.dev
   -->
+  <script async src="js/main.js"></script>
+  <!--
+  No JavaScript; hide layout switcher
+  -->
+  <noscript>
+    <style>
+      .select-layout {
+        display: none;
+      }
+    </style>
+  </noscript>
 </head>
 <body>
-
-<!-- <a href="#layout">Layout v4</a> -->
 
 <!--
 Checkbox toggle for greeked text
 - Greeking: https://en.wikipedia.org/wiki/Greeking
 -->
 
+<label for="toggle-greeking" class="toggle-label">Greeked Text:</label>
 <input type="checkbox" value="selected" class="toggle-input" id="toggle-greeking" checked>
-<label for="toggle-greeking" class="toggle-label">Greeked Text</label>
+
+<!--
+Layout switcher
+See: js/main.js
+-->
+
+<div class="select-layout">
+  <label for="select-layout" class="select-label">Choose a Layout:</label>
+  <select name="layouts" id="select-layout">
+    <option value="layout-v1" selected>1</option>
+    <option value="layout-v2">2</option>
+    <option value="layout-v3">3</option>
+    <option value="layout-v4">4</option>
+    <option value="layout-v5">5</option>
+  </select>
+</div>
 
 <main>
 
-<div class="grid-3-col layout-v1">
+<div class="grid-3-col layout-v1" id="layout">
 
 <!--
 - Placeholder 1px × 1px PNG: http://png-pixel.com
