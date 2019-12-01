@@ -289,6 +289,17 @@ https://www.smashingmagazine.com/2019/01/css-multiple-column-layout-multicol/
     "header-1     text-1    text-1"; /* auto height */
 }
 
+/*
+1. Vertically offset grid-area.
+Understanding and Using CSS Positions:
+https://zellwk.com/blog/css-positions/
+*/
+
+.layout-v4 #header-1 {
+  position: relative; /* 1 */
+  top: -32%; /* 1 */
+}
+
 /* layout 5 */
 
 .layout-v5 {
