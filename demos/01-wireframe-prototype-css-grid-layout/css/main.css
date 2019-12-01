@@ -82,7 +82,6 @@ select { /* 1 */
   text-transform: none;
 }
 
-
 /* --- flexible/fluid images --- */
 
 /*
@@ -90,6 +89,7 @@ select { /* 1 */
 2. Override width and height values on HTML img tag (if present)
 3. Remove the gap between audio, canvas, iframes, images, videos and the bottom of their containers:
 https://github.com/h5bp/html5-boilerplate/issues/440
+4. Remove the border on images inside links in IE 10.
 */
 
 img {
@@ -97,6 +97,7 @@ img {
   max-width: 100%; /* 1 */
   height: auto; /* 2 */
   vertical-align: middle; /* 3 */
+  border-style: none; /* 4 */
 }
 
 /* --- FPO images --- */
