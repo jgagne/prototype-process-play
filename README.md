@@ -4,6 +4,7 @@ Prague College Workshop (November 27, 2019)
 
 - [Demos](/demos/)
   - [Preview](https://jgagne.github.io/prototype-process-play/demos/01-wireframe-prototype-css-grid-layout/) → `01-wireframe-prototype-css-grid-layout`
+  - [Preview](https://jgagne.github.io/prototype-process-play/demos/02-style-tile-css-grid-layout/) → `02-style-tile-css-grid-layout`
 
 ## Inspiration
 

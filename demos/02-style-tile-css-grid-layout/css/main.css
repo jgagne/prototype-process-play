@@ -1,0 +1,246 @@
+/* --- resets --- */
+
+/*
+1. Correct the line height in all browsers.
+https://github.com/necolas/normalize.css/blob/fc091cce1534909334c1911709a39c22d406977b/normalize.css#L12
+2. Set font-family to sans-serif instead of serif.
+*/
+
+html {
+  font: 100%/1.15 sans-serif; /* 1 / 2 */
+}
+
+body {
+  max-width: 60rem;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+figure {
+  margin: 0;
+}
+
+/*
+1. Correct the inheritance and scaling of font size in all browsers.
+2. Correct the odd `em` font sizing in all browsers.
+*/
+
+code {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* --- flexible/fluid images --- */
+
+/*
+1. https://alistapart.com/article/fluid-images/
+2. Override width and height values on HTML img tag (if present)
+3. Remove the gap between audio, canvas, iframes, images, videos and the bottom of their containers:
+https://github.com/h5bp/html5-boilerplate/issues/440
+4. Remove the border on images inside links in IE 10.
+*/
+
+img {
+  width: auto; /* 2 */
+  max-width: 100%; /* 1 */
+  height: auto; /* 2 */
+  vertical-align: middle; /* 3 */
+  border-style: none; /* 4 */
+}
+
+/* --- color palette / CSS variables --- */
+
+:root {
+
+  /* brand colors / Prague College */
+
+  --brand-color-gold: #F9B123;
+  --brand-color-magenta: #D5007F;
+  --brand-color-green: #BED200;
+  --brand-color-light-gray: #F3F3F3;
+
+}
+
+/* --- lists --- */
+
+/* remove visual decoration and spacing */
+
+.unlist {
+  list-style: none url("");
+  padding-left: 0;
+  margin: 0;
+}
+
+/* --- general typography --- */
+
+header {
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-weight: normal;
+}
+
+p {
+  line-height: 1.35;
+  margin-top: 0;
+}
+
+/* --- sections --- */
+
+nav {
+  margin-top: 1.5rem;
+}
+
+nav ul {
+  padding-left: 1.15rem;
+}
+
+nav li {
+  margin-top: 1rem;
+}
+
+article {
+  padding: 1.5rem 0;
+}
+
+/* --- swatch palette / colors --- */
+
+.swatch-color {
+  padding-bottom: 20%;
+  border-radius: .1875rem;
+}
+
+.swatch code {
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.swatch figcaption {
+  margin-top: 1rem;
+}
+
+/* fill colors */
+
+.brand-gold-fill {
+  background-color: var(--brand-color-gold);
+}
+
+.brand-magenta-fill {
+  background-color: var(--brand-color-magenta);
+}
+
+.brand-green-fill {
+  background-color: var(--brand-color-green);
+}
+
+.brand-light-gray-fill {
+  background-color: var(--brand-color-light-gray);
+}
+
+/* text colors */
+
+.brand-gold-text {
+  color: var(--brand-color-gold);
+}
+
+.brand-magenta-text {
+  color: var(--brand-color-magenta);
+}
+
+.brand-green-text {
+  color: var(--brand-color-green);
+}
+
+.brand-light-gray-text {
+  color: var(--brand-color-light-gray);
+}
+
+/* copy to clipboard button */
+
+.copy {
+  display: inline-block;
+  font: inherit;
+  font-size: .85em;
+  font-family: "Trebuchet MS", sans-serif;
+  color: #999;
+  line-height: 1.15;
+  letter-spacing: .02rem;
+  text-transform: none;
+  text-align: center;
+  vertical-align: middle;
+  background-color: transparent;
+  padding: 1rem;
+  border: .1rem solid #ccc;
+  border-radius: .3125rem;
+  overflow: visible;
+  cursor: pointer;
+}
+
+.copy:hover,
+.copy:focus {
+  color: #000;
+}
+
+.copy:focus,
+.copy:active {
+  border-color: #666;
+  cursor: copy;
+}
+
+/* artwork */
+
+.artwork img {
+  border: 1px solid #ccc;
+}
+
+.artwork figcaption {
+  font-size: 80%;
+  margin-top: 1rem;
+}
+
+.grid-3-col {
+  display: grid;
+  grid-gap: 1.5rem;
+}
+
+/* ↓ start media query */
+
+@media (min-width: 44em) {
+
+/*
+1. Resize typography for multi-column layout
+*/
+
+body {
+  font-size: 125%; /* 1 */
+}
+
+/* --- grid layout / 3 col --- */
+
+/*
+1. The fr unit
+https://mozilladevelopers.github.io/playground/css-grid/04-fr-unit/
+*/
+
+.grid-3-col {
+  display: grid;
+  max-width: 60rem;
+  grid-template-rows: auto; /* height of rows */
+  grid-template-columns: repeat(3, 1fr); /* the same as: 1fr 1fr 1fr / 1 */
+  grid-gap: 1.5rem;
+  margin: 0 auto;
+}
+
+/* increase (contentless) faux height of swatches */
+
+.grid-3-col .swatch-color {
+  padding-bottom: 60%;
+}
+
+/* ↑ end media query */

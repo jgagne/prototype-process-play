@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Demo: Style Tile with CSS Grid Layout</title>
+  <meta name="description" content="Deciding to design in the browser.">
+  <meta name="author" content="Justin Gagne, https://justingagne.design">
+  <script async src="js/clipboard.min.js"></script>
+</head>
+<body>
+
+<h1>Style Tile</h1>
+
+<nav>
+  <ul>
+    <li><a href="#colors">Colors</a></li>
+    <li><a href="#artwork">Artwork</a></li>
+  </ul>
+</nav>
+
+<article id="colors">
+  <h2>Colors</h2>
+  <section>
+    <h3>Brand</h3>
+    <ul class="unlist swatch-palette grid-3-col">
+      <li>
+        <figure class="swatch">
+          <div class="swatch-color brand-gold-fill"></div>
+          <figcaption>
+            <code class="brand-gold-text">#F9B123F</code>
+            <button class="copy" data-clipboard-text="#F9B123F">
+            Copy to clipboard
+            </button>
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure class="swatch">
+          <div class="swatch-color brand-magenta-fill"></div>
+          <figcaption>
+            <code class="brand-magenta-text">#D5007F</code>
+            <button class="copy" data-clipboard-text="#D5007F">
+            Copy to clipboard
+            </button>
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure class="swatch">
+          <div class="swatch-color brand-green-fill"></div>
+          <figcaption>
+            <code class="brand-green-text">#BED200</code>
+            <button class="copy" data-clipboard-text="#BED200">
+            Copy to clipboard
+            </button>
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure class="swatch">
+          <div class="swatch-color brand-light-gray-fill"></div>
+          <figcaption>
+            <code class="brand-light-gray-text">#F3F3F3</code>
+            <button class="copy" data-clipboard-text="#F3F3F3">
+            Copy to clipboard
+            </button>
+          </figcaption>
+        </figure>
+      </li>
+    </ul>
+  </section>
+</article>
+
+<article id="artwork">
+  <h2>Artwork</h2>
+  <section>
+    <h3>Style</h3>
+    <ul class="unlist swatch-palette grid-3-col">
+      <li>
+        <figure class="artwork">
+          <img alt="" src="img/artwork/style/prague-college-art-design-w1280.jpg">
+          <figcaption>
+            Art & Design landing page.
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure class="artwork">
+          <img alt="" src="img/artwork/style/prague-college-resources-w1280.jpg">
+          <figcaption>
+            Resources landing page.
+          </figcaption>
+        </figure>
+      </li>
+    </ul>
+  </section>
+</article>
+
+</body>
+</html>
+
