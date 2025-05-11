@@ -23,7 +23,7 @@ Pick your flavor:
 
 - [BBEdit](http://www.barebones.com/products/bbedit/) (Made in Massachusetts, but Mac only)
 - [Brackets](http://brackets.io) (Free and friendly from Adobe)
-- [Visual Code Studio](https://code.visualstudio.com) (MS Kool-Aid)
+- [Visual Studio Code](https://code.visualstudio.com) (MS Kool-Aid)
 
 ## Browsers
 
