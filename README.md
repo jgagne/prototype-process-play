@@ -21,8 +21,8 @@ Practical CSS Grid Layout use cases.
 
 Pick your flavor:
 
-- [BBEdit](http://www.barebones.com/products/bbedit/) (Made in Massachusetts, but Mac only)
-- [Brackets](http://brackets.io) (Free and friendly from Adobe)
+- [BBEdit](http://www.barebones.com/products/bbedit/) (Made in Massachusett USA, but Mac only)
+- [WebStorm](https://www.jetbrains.com/webstorm) (Made in Czech Republic)
 - [Visual Studio Code](https://code.visualstudio.com) (MS Kool-Aid)
 
 ## Browsers
