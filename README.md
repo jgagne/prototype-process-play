@@ -30,7 +30,7 @@ Pick your flavor:
 Fight [browser monoculture](https://adrianroselli.com/2018/12/stepping-back-from-the-edge.html):
 
 - [Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/) (Awesome Inspector for CSS Grid Layout and learn with their [CSS Grid playground](https://mozilladevelopers.github.io/playground/css-grid/))
-- [Microsoft Edge](https://www.microsoftedgeinsider.com/en-us/download/)
+- <s>[Microsoft Edge](https://www.microsoftedgeinsider.com/en-us/download/)</s>
 
 ## GitHub
 
